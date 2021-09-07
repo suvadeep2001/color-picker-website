@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import { SwatchesPicker } from "react-color";
+import { SketchPicker } from "react-color";
 
 function App() {
   const [color, setColor] = useState("#6AC47E");
@@ -18,7 +18,7 @@ function App() {
     <div style={{ background: color }} className="App">
       <div className="container">
         {hidden && (
-          <SwatchesPicker
+          <SketchPicker
             styles={pickerStyles}
             color={color}
             onChange={(updatedColor) => setColor(updatedColor.hex)}
